@@ -615,6 +615,14 @@ span.in_progress{
     justify-content: flex-end;  
 }    
 
+.pk-widget.widget-headeritems{
+    display: flex;
+    justify-content: flex-end;  
+}
+
+#header .widgets-left.widgets-row{
+    justify-content: flex-end;     
+}
     
 /*
 .pkheaderitems{
