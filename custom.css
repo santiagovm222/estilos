@@ -609,6 +609,14 @@ span.in_progress{
     margin-top: 7px;
     z-index: 9;
     }
+    
+.pk-widget.widget-module{
+      display: flex;
+    justify-content: flex-end;  
+}    
+
+    
+/*
 .pkheaderitems{
     display: flex;
     justify-content: flex-end;
