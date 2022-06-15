@@ -295,14 +295,10 @@ h2 {
     /*Separar el menu hamburguesa de los iconos*/
     #header .pk-widget{
         /*margin: auto;*/
-        margin-left: 0;
     }
     
-    #header .widgets-left, .widgets-row{
-        /*display: flex;
-        justify-content: space-between;*/
+    #header .widgets-left.widgets-row{
         margin-top: 5px !important;
-        justify-content: end;
     }
 
     #header #search_widget {
@@ -311,7 +307,7 @@ h2 {
 
     /*Conservar el tamaño del div de los iconos*/
     #header .pk-widget, .widget-headeritems{
-        width: inherit;
+        /*width: 100%;*/
         position: static;
     }
 
@@ -609,7 +605,15 @@ span.in_progress{
     margin-top: 7px;
     z-index: 9;
     }
-    
+
+#header .pk-widget{
+    margin-left: 0;
+}
+
+#header .pk-widget, .widget-headeritems{
+    width: inherit;
+} 
+
 .pk-widget.widget-module{
       display: flex;
     justify-content: flex-end;  
@@ -621,7 +625,13 @@ span.in_progress{
 }
 
 #header .widgets-left.widgets-row{
+    align-items: baseline;
     justify-content: flex-end;     
+}
+
+.widgets-column>.pk-widget{
+    margin-top:0px;
+    margin-bottom:0px;
 }
     
 /*
@@ -656,7 +666,13 @@ span.in_progress{
     padding-top: 0.2em;
     padding-bottom: 0.7em;
     }
-
+    .addtocartfromurl_content{
+        width:100%;
+    }
+#idxrrelatedproducts-listado-carrito .row{
+    margin-left:0px;
+    margin-right:0px;
+}
 }
 
 #scalapayPopUpTrigger > #sp-container{
@@ -665,7 +681,10 @@ span.in_progress{
     color: black;
 }
 
+#saved_cart_txt .jBox-content {
+    background:#0988f8 !important;
+}
 
-
-
-
+#jbox-clipboard-success .jBox-content {
+    background:#0988f8 !important;
+}
